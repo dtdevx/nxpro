@@ -18,7 +18,36 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.project-state-planned {
+    @apply text-gray-200
+}
+
+.project-state-active {
+    @apply text-emerald-200
+}
+
+.project-state-paused {
+    @apply text-amber-400
+}
+
+.project-state-done {
+    @apply text-emerald-400
+}
+
+.btn-task-state-open.active,
+.btn-task-state-open:hover {
+    @apply border-gray-200 text-gray-200 
+}
+
+.btn-task-state-doing.active,
+.btn-task-state-doing:hover {
+    @apply border-emerald-200 text-emerald-200
+}
+
+.btn-task-state-done.active,
+.btn-task-state-done:hover {
+    @apply border-emerald-400 text-emerald-400
 }
